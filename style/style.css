@@ -1,6 +1,7 @@
 *{
     margin: 0;
-    padding: 0  ;
+    padding: 0;
+    outline: none;
 }
 
 body{
@@ -13,12 +14,20 @@ body{
 
 .container {
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 30%;
+    align-items: center;    
+    justify-content: space-around;
 }
 
-.result{
+#text_send, #text_send:focus{
+    height: 30rem;
+    width: 580px;
+    font-size: 2rem;
+    background-color: transparent;
+    resize: none;
+    border: none;
+}
+
+.result_container{
     width: 100%;
     max-width: 340px;
     background-color: white;
