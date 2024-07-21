@@ -13,32 +13,29 @@
     </header>
     
     <main class="container">
-                <form class="form_content">
-                    <textarea id="text_send"placeholder="Digite seu texto"></textarea>
-                    <p><img src="image/bi_exclamation-circle-fill.png" alt="">Apenas letras minúsculas e sem acento.</p>
-                    <input onclick="CLIQUEI()" type="button" value="cript">
-                    <input type="button" value="descript">
-                </form>
+        <form class="form_content">
+            <textarea id="text_send" placeholder="Digite seu texto"></textarea>
+            <p><img src="image/bi_exclamation-circle-fill.png" alt="">Apenas letras minúsculas e sem acento.</p>
+            <input onclick="enviarMensagem()" type="button" value="cript">
+            <input type="button" value="descript">
+        </form>
 
-            <div class="result_container">
-                    <div class="no-result">
-                        <img src="image/High quality products 1 1.svg" alt="">
-                        <h2>Nenhuma mensagem <br> encontrada</h2>
-                        <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
-                    </div>
-
-                    <div class="result" >
-                        <p class="text_result">dasdsadasdas</p>
-                        <input type="button" value="copiar">
-                    </div>
+        <div class="result_container">
+            <div class="no_result">
+                <img src="image/High quality products 1 1.svg" alt="">
+                <h2>Nenhuma mensagem <br> encontrada</h2>
+                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
             </div>
 
+            <div class="result">
+                <p class="text_result" id="textresult"></p>
+                <input type="button" value="copiar">
+            </div>
         </div>
     </main>
 
     <footer>
-
-
+        <!-- Footer content -->
     </footer>
 
     <script src="script/script.js"></script>
