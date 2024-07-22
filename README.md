@@ -1,6 +1,5 @@
 ---
 
-https://prnt.sc/LnRuMA4jqJDm
 
 # Challenge Decodificador de Texto
 
@@ -12,7 +11,6 @@ Este projeto é um decodificador de texto desenvolvido como parte do curso da Al
 - **Interface Simples:** Oferece uma interface intuitiva para facilitar o uso, com campos para entrada de texto e visualização dos resultados.
 - **Mensagens de Erro:** Exibe mensagens de erro caso o texto não esteja em um formato suportado para codificação ou decodificação.
 
-![Exemplo Visual](
 
 https://github.com/user-attachments/assets/ea6dfe0f-d675-4726-98b9-428697ee1179
 
