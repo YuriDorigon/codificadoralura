@@ -1,78 +1,172 @@
+:root {
+    --background-color: #121212;
+    --text-color: #FFFFFF;
+    --button-bg-color: #333333;
+    --button-hover-border-color: #FFFFFF;
+    --button-text-color: #FFFFFF;
+    --button-disabled-bg-color: #666666;
+    --button-disabled-text-color: #CCCCCC;
+    --container-bg-color: #1E1E1E;
+    --font-family: "Inter", sans-serif;
+    --placeholder-color: #BBBBBB;
+}
+
 * {
     margin: 0;
     padding: 0;
     outline: none;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+html,
 body {
-    background-color: white;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: var(--font-family);
 }
 
 .logoalura {
-    padding: 10px;
+    margin: 10px 0 0 10px;
 }
 
 .container {
+    margin-top: 1.25rem;
     display: flex;
-    align-items: center;    
+    align-items: stretch;
     justify-content: space-around;
 }
 
-textarea, textarea:focus {
-    height: 30rem;
-    width: 580px;
-    font-size: 2rem;
+textarea {
+    color: var(--text-color);
+    font-family: var(--font-family);
     background-color: transparent;
-    resize: none;
     border: none;
-    width: 350px;
-    height: 400px;
-    text-transform:lowercase ;
+    height: 25rem;
+    text-transform: lowercase;
+    margin: 1.25rem;
+    resize: none;
+    font-size: 2rem;
+}
+
+#text_send {
+    width: 100%;
+}
+
+textarea::placeholder {
+    font-family: var(--font-family);
+    color: var(--placeholder-color);
+}
+
+textarea:focus::placeholder {
+    font-family: var(--font-family);
 }
 
 .result_container {
     display: flex;
     flex-direction: column;
-    background-color: white;
-    padding: 2rem;
+    background-color: var(--container-bg-color);
     border-radius: 2rem;
+    justify-content: space-between;
+    align-items: center;  
 }
-
 
 .result {
     display: none;
     flex-direction: column;
     height: 30rem;
-    width: 580px;
-    font-size: 2rem;
+    width: 36.25rem;
     background-color: transparent;
     justify-content: space-between;
-
-    
+    font-size: 2rem;
 }
 
-.no_result {
-    display: flex; /* Inicialmente oculto */
-    flex-direction: column;
-    align-items: center;
-}
-
-input{
-    background-color: #0A3871;
-    color: white;
+input {
+    font-family: var(--font-family);
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
     border: none;
-    width: 328px;
-    height: 67px;
-    border-radius: 24px;
-    font-size: 16px;
+    width: 20.5rem;
+    height: 4.1875rem;
+    border-radius: 1.5rem;
+    font-size: 1rem;
     cursor: pointer;
 }
 
-#btn_descript{
-    background-color: #D8DFE8;
-    color: #0A3871;
+#btn_descript {
+    background-color: var(--button-disabled-bg-color);
+    color: var(--button-disabled-text-color);
 }
 
-input:hover{
-    border: 2px black solid ;
+input:hover {
+    border: 0.125rem var(--button-hover-border-color) solid;
+}
+
+.form_content>p,
+.logo-explam {
+    display: flex;
+    align-items: center;
+    margin: 0 1rem;
+    color: var(--placeholder-color);
+    font-size: 0.75rem;
+    margin: 1rem;
+}
+
+.result_container>p,
+h2 {
+    display: flex;
+    width: 21rem;
+    text-align: center;
+    justify-content: center;
+    color: var(--text-color);
+    margin: 2rem;
+}
+
+.result_container>h2 {
+    font-weight: bold;
+    text-align: center;
+}
+
+.copy-right-sec {
+    font-family: var(--font-family);
+    font-weight: bold;
+    text-align: center;
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    color: var(--button-text-color);
+}
+
+
+@media (max-width: 1000px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form_content {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-bottom: 4rem;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    #text_send {
+        width: 25rem;
+    }
+
+    .result_container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1.25rem;
+    }
 }

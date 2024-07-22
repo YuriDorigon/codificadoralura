@@ -1,38 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Decoder challenge alura</title>
     <link rel="stylesheet" href="style/style.css">
 </head>
+
 <body>
-    
+
     <header class="header">
         <img src="image/Frame 6.png" class="logoalura" alt="logoalura">
     </header>
-    
+
     <main class="container">
         <form class="form_content">
-            <textarea id="text_send" placeholder="Digite seu texto" required ></textarea>
-            <p><img src="image/bi_exclamation-circle-fill.png" alt="">Apenas letras minúsculas e sem acento.</p>
-            <input onclick="criptoMensagem()" type="button" value="cript">
-            <input onclick="descriptMensagem()" type="button" value="descript" id="btn_descript">
+            <textarea id="text_send" placeholder="Digite seu texto" required></textarea>
+            <p><img src="image/bi_exclamation-circle-fill.png" class="logo-explam" alt="">Apenas letras minúsculas e sem acento.</p>
+            <input onclick="criptoMensagem()" type="button" value="Criptografar">
+            <input onclick="descriptMensagem()" type="button" value="Descriptografar" id="btn_descript">
         </form>
-
         <div class="result_container" id="result_container">
-            <div class="no_result">
                 <img src="image/High quality products 1 1.svg" alt="">
-                <h2>Nenhuma mensagem <br> encontrada</h2>
+                <h2>Nenhuma mensagem encontrada</h2>
                 <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
-            </div>
         </div>
     </main>
 
-    <footer>
-        <!-- Footer content -->
-    </footer>
-
     <script src="script/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
+
 </html>
+
