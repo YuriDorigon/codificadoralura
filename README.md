@@ -1,5 +1,7 @@
 ---
 
+https://prnt.sc/LnRuMA4jqJDm
+
 # Challenge Decodificador de Texto
 
 Este projeto é um decodificador de texto desenvolvido como parte do curso da Alura. Ele transforma mensagens codificadas em texto legível e vice-versa, facilitando a comunicação criptografada de maneira simples e divertida.
@@ -14,7 +16,6 @@ Este projeto é um decodificador de texto desenvolvido como parte do curso da Al
 
 https://github.com/user-attachments/assets/ea6dfe0f-d675-4726-98b9-428697ee1179
 
-)
 
 ## ✔️ Técnicas e tecnologias utilizadas
 
