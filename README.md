@@ -5,6 +5,9 @@
 
 Este projeto é um decodificador de texto desenvolvido como parte do curso da Alura. Ele transforma mensagens codificadas em texto legível e vice-versa, facilitando a comunicação criptografada de maneira simples e divertida.
 
+https://yuridorigon.github.io/codificadoralura/
+
+---
 ## 🔨 Funcionalidades do projeto
 
 - **Codificação e Decodificação:** O aplicativo pode converter mensagens em um formato codificado e também decodificar mensagens previamente codificadas.
