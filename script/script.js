@@ -1,12 +1,10 @@
 function criptoMensagem() {
     let mensagem = document.getElementById('text_send').value;
-    console.log('Mensagem original:', mensagem); // Verifica o valor original
+    console.log('Mensagem original:', mensagem); 
 
-    // Remove acentos e diacríticos
     let mensagemSemAcento = mensagem.normalize('NFD').replace(/[\u0300-\u036f]/g, "");
-    console.log('Sem acento:', mensagemSemAcento); // Verifica após remoção de acento
+    console.log('Sem acento:', mensagemSemAcento); 
 
-    // Substitui os caracteres por seus códigos criptografados
     let criptafia = mensagemSemAcento
         .replace(/e/g, "enter")
         .replace(/i/g, "imes")
@@ -14,7 +12,7 @@ function criptoMensagem() {
         .replace(/o/g, "ober")
         .replace(/u/g, "ufat");
     
-    console.log('Criptografado:', criptafia); // Verifica o texto criptografado
+    console.log('Criptografado:', criptafia); 
 
     if (mensagem === "") {
         const Toast = Swal.mixin({
@@ -42,9 +40,12 @@ function criptoMensagem() {
 
 function descriptMensagem() {
     let mensagem = document.getElementById('text_send').value;
-    console.log('Mensagem original:', mensagem); // Verifica o valor original
+    console.log('Mensagem original:', mensagem); 
 
-    // Substitui os códigos criptografados pelos caracteres originais
+    let mensagemSemAcento = mensagem.normalize('NFD').replace(/[\u0300-\u036f]/g, "");
+    console.log('Sem acento:', mensagemSemAcento); 
+
+
     let criptafia = mensagem
         .replace(/enter/g, "e")
         .replace(/imes/g, "i")
@@ -52,7 +53,7 @@ function descriptMensagem() {
         .replace(/ober/g, "o")
         .replace(/ufat/g, "u");
     
-    console.log('Descriptografado:', criptafia); // Verifica o texto descriptografado
+    console.log('Descriptografado:', criptafia); 
 
     if (mensagem === "") {
         const Toast = Swal.mixin({
@@ -80,8 +81,8 @@ function descriptMensagem() {
 
 function copyMensagem() {
     var copyText = document.getElementById("result-text");
-    copyText.select(); // Seleciona o texto
-    document.execCommand("copy"); // Copia para a área de transferência
+    copyText.select(); 
+    document.execCommand("copy"); 
 
     const Toast = Swal.mixin({
         toast: true,
