@@ -65,6 +65,8 @@ textarea:focus::placeholder {
 }
 
 .result_container {
+    width: 400px;
+    height: 591px;
     display: flex;
     flex-direction: column;
     background-color: var(--container-bg-color);
@@ -93,11 +95,11 @@ input {
     border-radius: 1.5rem;
     font-size: 1rem;
     cursor: pointer;
+    margin-bottom: 10px;
 }
 
 #btn_descript {
     background-color: var(--button-disabled-bg-color);
-    color: var(--button-disabled-text-color);
 }
 
 input:hover {
