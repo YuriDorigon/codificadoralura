@@ -1,5 +1,5 @@
 
-        function removerAcentos(mensagem) {
+    function removerAcentos(mensagem) {
           return mensagem.normalize('NFD').replace(/[\u0300-\u036f]/g, "");
       }
 
@@ -70,7 +70,6 @@
               icon: "success",
               title: "Texto copiado com sucesso.",
               showConfirmButton: false,
-              timer: 2000,
-              timerProgressBar: false
+              timer: 2000
           });
       }
